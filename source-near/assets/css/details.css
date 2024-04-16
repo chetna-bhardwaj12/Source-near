@@ -1,0 +1,113 @@
+body {
+  overflow-x: hidden;
+}
+
+.details_home {
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  width: 100%;
+}
+
+.slider_img img {
+  height: 330px;
+  width: 100%;
+}
+
+.rating {
+  border-right: 2px solid #979797;
+  padding-right: 5px;
+}
+.rating a i {
+  background: linear-gradient(to right, #ffc107, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: none;
+  color: #979797;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-tabs {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-tabs .nav-link.active {
+  color: #1a56c6;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: #fff;
+  border-bottom: 2px solid #1a56c6;
+}
+
+.content_more {
+  display: none;
+}
+
+.read_more label {
+  display: inline-block;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .content_more {
+  display: block;
+}
+
+#check:checked ~ label {
+  visibility: hidden;
+}
+
+#check:checked ~ label:after {
+  content: "Show less";
+  display: block;
+  visibility: visible;
+}
+
+.model-content {
+  border: none;
+  border-radius: 40px;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-dialog {
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+}
+
+.button_4 {
+  border: 1px solid #1a56c6;
+  outline: none;
+  background: none;
+  color: #1a56c6;
+  width: 100%;
+  height: 60px;
+}
+
+.button_5 {
+  border: none;
+  outline: none;
+  background: #1a56c6;
+  width: 100%;
+  height: 60px;
+}
+
+@media (max-width: 325px) {
+  .nav-link {
+    display: inline;
+    padding: 0.5rem 0;
+  }
+}

@@ -1,0 +1,42 @@
+.month-list {
+  position: absolute;
+  color: #555;
+  width: 170px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  font-size: 1rem;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-color);
+  margin: auto;
+  text-align: start;
+}
+
+.month {
+  text-align: center;
+}
+
+.month:hover {
+  background-color: #eee;
+  color: #1a56c6;
+  cursor: pointer;
+}
+
+.month.selected {
+  color: #1a56c6;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .month-list {
+    width: 120px;
+  }
+}
+
+@media (max-width: 360px) {
+  .month-list {
+    width: 150px;
+  }
+}
